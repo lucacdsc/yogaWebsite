@@ -8,7 +8,7 @@ body{
     height: 100%;
 }
 body{
-    background-color: lightblue;
+    background-color: #787373;
 }
 :root{
     --main-light-color: #f8b281;
@@ -23,9 +23,20 @@ h3{
     font-size: 1.25rem;
     line-height: 125%;
 }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav svg{
+    cursor: pointer;
+}
 @font-face{
     font-family:"argonite";
     src: url("/imgs/stone\ orgonite.woff");
+}
+section{
+    padding:5% ;
 }
 .links{
     display: none;
@@ -42,4 +53,47 @@ h3{
 .logo img{
     width:1.5rem;
 }
-
+.front-page{
+    min-height: 100vh;
+     color: #fff;
+}
+.selling-point{
+    margin-top: 25vh;
+    font-family: "argonite",sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+    text-align: center;
+}
+.selling-point h3{
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+.cta{
+    margin-top: 2rem;
+}
+.cta button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+.cta-main{
+    background-color: var(--main-light-color);
+    color: var(--secondary-color);
+   
+}
+.cta-sec{
+    background-color: var(--secondary-color);
+    color: #fff;
+    
+}
+.hero{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
