@@ -8,7 +8,8 @@ body{
     height: 100%;
 }
 body{
-    background-color: #787373;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 :root{
     --main-light-color: #f8b281;
@@ -39,7 +40,21 @@ section{
     padding:5% ;
 }
 .links{
-    display: none;
+  position: absolute;
+  background:#fff;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+.links a{
+    color: var(--secondary-color);
+    font-size: 2rem;
 }
 .logo{
     display: flex;
@@ -118,4 +133,18 @@ section{
     left: 50%;
     transform: translate(-50%, -10%);
     font-size: 2rem;
+}
+.about{
+    color: var(--secondary-color);
+}
+.about h2{
+    font-family: "argonite",sans-serif;
+}
+.about p{
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+.about img{
+    width: 100%;
+    margin-top: 2rem;
 }
